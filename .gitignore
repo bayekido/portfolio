@@ -1,2 +1,2 @@
-node_modules
-test.md
+Exclude the image directory and its contents
+image/
