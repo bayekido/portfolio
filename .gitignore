@@ -1,2 +1,2 @@
-Exclude the image directory and its contents
-image/
+node_modules/
+portfolio/
