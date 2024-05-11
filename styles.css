@@ -1,6 +1,6 @@
 .he {
   width: 100%;
-  height: 80px;
+  height: auto;
   display: block;
 }
 
@@ -130,11 +130,13 @@ body {
 }
 
 .container {
-  display: flex;
+  background-color: aqua;
+  display: grid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 400px;
+  margin-bottom: 300px;
 }
 
 .item {
@@ -142,7 +144,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: auto;
   width: 200px;
   padding: 20px;
   margin-top: 80px;
@@ -193,26 +195,11 @@ button {
   cursor: pointer;
 }
 
-.about {
-  justify-content: center;
-  display: flex;
-  height: 1000px;
-}
-
 .item1 {
-  justify-content: center;
-  background-color: aliceblue;
-  display: flex;
+  background-color: rgb(218, 3, 14);
   flex-direction: column;
-  width: 400px;
-  border: 2px solid #4509a7;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.about1 {
-  display: flex;
-  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .para2 {
@@ -225,14 +212,6 @@ button {
   text-decoration: none;
   margin-left: 10px;
   margin-top: -20px;
-}
-
-.icon {
-  padding: -20px;
-  justify-content: space-between;
-  position: relative;
-  display: flex;
-  margin-left: 40px;
 }
 
 .setbtn {
@@ -309,10 +288,57 @@ button {
 }
 
 .last3 h4 {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 20px;
   line-height: 120%;
   color: #000;
   margin-left: 7%;
+}
+
+/* Contact Form Styles */
+.contact {
+  justify-content: center;
+  background-color: rgb(12, 31, 201);
+  padding: 20px;
+  border: 2px solid #4509a7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 200%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #d41847;
+}
+
+.btn {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.contactme {
+  display: grid;
+  background-color: rgb(69, 69, 161);
+}
+
+.para {
+  border: 1px solid #b90a19;
 }
