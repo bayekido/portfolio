@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>portfolio</title>
+    
 </head>
 <body> 
-  <section class="section1">
-    <div class="logoc">
+  <section class="section1" id="home">
       osana
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="image/menu.jpg" alt="Menu Icon">
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="portfolio">Portfolio</a>
-          <a class="dropdown-item" href="about">About</a>
-          <a class="dropdown-item" href="contact">Contact</a>
-        </div>
-      </div>
-    </div>
-    </div>
+      <nav class="navigator">
+        <li onclick="hambering()"><a href="#"><img src="image/menu.jpg" class="menu"></a></li>
+        <img src="image/close.jpg" class="close" onclick=closeBack()>
+        <ul class="sidebar">
+          <li><a href="#home" onclick=backToMain()>home</a></li>
+          <li><a href="#portfolio" onclick=backToMain()>portfolio</a></li>
+         <li><a href="#about" onclick=backToMain()>about</a></li>
+         <li><a href="#contact" onclick=backToMain()>contact</a></li>         
+        </ul>
+      </nav>
+    
+    
     <div class="page1">
       <div id="tit">
       <h1>I'm Osana, I'm glad<br> to see you</h1>
@@ -43,11 +44,12 @@
   </section>
 
   <div  class="container">
-    <section class="item">
+    <section class="item" id="portfolio">
       <img src="image/des1.jpg" alt="Image 1" class="ime">
-      <img src="image/image1.jpg" alt="Image 1" class="image1">
-      
-      <div class="desk">
+      <div class="image1">
+      <img src="image/image1.jpg" alt="Image 1" class="i">
+      </div>
+      <div id="desk">
       <div class="title">
         <h2>Tonic</h2>
       </div>
@@ -74,10 +76,12 @@
 
 
     <section class="item">
-      <img src="image/image2.jpg" alt="Image 1" class="image">
-      <div class="desk">
+      <div class="image">
+      <img src="image/image2.jpg" alt="Image 1" class="ie">
+      </div>
+      <div id="desk">
       <div class="title">
-        <h2>Mutli-Post<br>Stories</h2>
+        <h2>Mutli-Post Stories</h2>
       </div>
       <div id="comp">
         <ul>
@@ -101,8 +105,10 @@
     </section>
 
     <section class="item">
-      <img src="image/image3.jpg" alt="Image 1" class="image">
-      <div class="desk">
+      <div  class="image">
+      <img src="image/image3.jpg" alt="Image 1" class="i">
+      </div>
+      <div id="desk">
       <div class="title">
         <h2>Tonic</h2>
       </div>
@@ -128,9 +134,10 @@
     </section>
 
     <section class="item">
-
-      <img src="image/image4.jpg" alt="Image 1" class="image">
-      <div class="desk">
+<div class="image">
+      <img src="image/image4.jpg" alt="Image 1" class="i">
+</div>
+      <div id="desk">
       <div class="title">
         <h2>Mutli-Post<br>Stories</h2>
       </div>
@@ -155,9 +162,14 @@
     </div>
     </section>
     </div>
+    
 
 
-    <section class="about1">
+
+
+
+    <section class="about" id="about">
+      <div class="abouta">
       <div class="me">
     <h1>About<br>Myself</h1>
   </div>
@@ -180,11 +192,13 @@
             <div class="get">
               <button>Get my resume</button>
             </div>
+      </div>
           
           <div class="languages">
             <div class="lang">
               <h2>langugages</h2>
             </div>
+            <div class="lan">
               <div class="js">
                <li><img src="image/images1.jpg" alt=""></li>
                <h5>JavaScript</h5>
@@ -197,7 +211,7 @@
                <li><img src="image/images3.jpg" alt=""></li>
                <h5>CSS</h5>
            </div> 
-           </div>
+            </div>
            <div class="last2">
                <h4>Frameworks</h4>
                <h3></h3>
@@ -206,13 +220,15 @@
            <div class="last3">
                <h4>Skills</h4>
                <img src="#" alt="">
+           </div>
+          </div>
               </section>
 
                
 
             
               <li>
-                <section class="contact">
+                <section class="contact" id="contact">
                                 <form action="https://formspree.io/f/mqkrjpoe" method="post">
                     <h1 class="headcontact">Contact me</h1>
                     <p class="p2">If you have an application you are interested in developing,
